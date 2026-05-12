@@ -2,8 +2,9 @@ name: Sabah Hava Durumu
 
 on:
   schedule:
-    # Her sabah 06:00 UTC = 09:00 Türkiye saati
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * *'     # 09:00 Türkiye saati
+    - cron: '30 9 * * *'    # 12:30 Türkiye saati
+    - cron: '0 15 * * *'    # 18:00 Türkiye saati
   workflow_dispatch:  # Elle de tetiklenebilir (test için)
 
 jobs:
